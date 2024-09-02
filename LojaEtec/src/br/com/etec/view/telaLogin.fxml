@@ -5,15 +5,14 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane minHeight="600.0" minWidth="800.0" style="-fx-background-color: red;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="br.com.etec.model.operacoes">
+<AnchorPane minHeight="600.0" minWidth="800.0" style="-fx-background-color: red;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.etec.model.operacoes">
    <children>
       <AnchorPane layoutX="335.0" layoutY="180.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: green;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
          <children>
-            <TextField layoutX="63.0" layoutY="99.0" prefHeight="50.0" prefWidth="680.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="50.0" />
-            <PasswordField layoutX="100.0" layoutY="270.0" prefHeight="50.0" prefWidth="680.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="150.0" />
-            <Button layoutX="250.0" layoutY="157.0" minHeight="50.0" mnemonicParsing="false" text="ACESSAR" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="250.0" />
-            <Button layoutX="50.0" layoutY="374.0" minHeight="50.0" mnemonicParsing="false" text="CADASTRAR" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="350.0" />
+            <TextField fx:id="txfUsuario" layoutX="246.0" layoutY="99.0" prefHeight="50.0" prefWidth="240.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="50.0" />
+            <PasswordField fx:id="psfSenha" layoutX="250.0" layoutY="270.0" prefHeight="50.0" prefWidth="240.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="150.0" />
+            <Button fx:id="btnAcessar" layoutX="250.0" layoutY="157.0" minHeight="50.0" mnemonicParsing="false" onAction="#validarUsuario" text="ACESSAR" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="250.0" />
+            <Button fx:id="btnCadastrar" layoutX="50.0" layoutY="374.0" minHeight="50.0" mnemonicParsing="false" text="CADASTRAR" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="350.0" />
          </children>
       </AnchorPane>
    </children>
