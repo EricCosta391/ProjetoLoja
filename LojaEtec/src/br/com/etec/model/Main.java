@@ -7,18 +7,16 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.fxml.FXMLLoader;
 
-
 public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
 			AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("/br/com/etec/view/telaLogin.fxml"));
-			Scene scene = new Scene(root,400,400);
+			Scene scene = new Scene(root);
 			scene.getStylesheets().add(getClass().getResource("/br/com/etec/view/application.css").toExternalForm());
 			primaryStage.setScene(scene);
-		
 			
-			
+			primaryStage.initStyle(StageStyle.UNDECORATED);
 			
 			primaryStage.show();
 			
@@ -26,7 +24,7 @@ public class Main extends Application {
 			e.printStackTrace();
 		}
 	}
-
+	
 	public static void main(String[] args) {
 		launch(args);
 	}
